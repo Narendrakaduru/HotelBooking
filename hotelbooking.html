@@ -58,14 +58,14 @@
             var optLocker = document.getElementById("optLocker");
 
             if(optAC.checked){
-                amenitiescost = 1000;
                 roomcost = roomcost + amenitiescost;
+                amenitiescost = 1000;
                 amenitiestype += optAC.value + "<br>";
             }
 
             if(optLocker.checked){
-                amenitiescost = 300;
                 roomcost = roomcost + amenitiescost;
+                amenitiescost = 300;
                 amenitiestype += optLocker.value + "<br>";
             }
             
@@ -78,10 +78,6 @@
             var persons = document.getElementById("txtPersons").value;
             var daysSpent = document.getElementById("txtDays").value;
             var advanceAmount = document.getElementById("txtAdvance").value;
-           /* 
-            var total = (roomcost + amenitiescost) * daysSpent;
-            var Balance = total - advanceAmount;
-            document.getElementById("lblBalance").innerHTML = Balance;*/
   
             
             if(persons <= 2){
@@ -107,6 +103,7 @@
             }
             else{
                 document.getElementById("Register").disabled = false;
+                msg.innerHTML = "";
             }
         }
 
