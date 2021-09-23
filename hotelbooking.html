@@ -89,8 +89,7 @@
             }else if(persons > 2){
                 var extraPersons = persons - 2;
                 var extraCostperday = extraPersons * 1000;
-                
-                var total = (roomcost + amenitiescost) * daysSpent * extraCostperday;
+                var total = (roomcost + amenitiescost) * daysSpent + extraCostperday;
             }
 
             var Balance = total - advanceAmount;
